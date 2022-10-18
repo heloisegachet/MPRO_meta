@@ -35,18 +35,12 @@ vector<Solution> Solution::voisinsSolution(Graphe graphe){
         }
         //SUPPRESSION D'UN SOMMET (bit 1 -> 0): SOLUTION ADMISSIBLE
         //OBJECTIF PLUS PETIT
-        /*if(solution[*it]==1){
+        if(solution[*it]==1){
               Solution voisin = Solution(*this);
               voisin.delVertex(*it);
               tabSol.push_back(voisin);
-         }*/
+         }
 
-    }
-    for(int i=0; i<tabSol.size();i++)
-    {
-        cout<<"voisin : ";
-        printSolution(tabSol[i]);
-        cout<<"\n";
     }
     return tabSol;
 }
