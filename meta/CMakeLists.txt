@@ -18,6 +18,7 @@ add_executable(meta
   main.cpp
   graphe.cpp graphe.h
   solution.cpp solution.h
+  heuristique.cpp heuristique.h
 )
 
 target_link_libraries(meta Qt${QT_VERSION_MAJOR}::Core)

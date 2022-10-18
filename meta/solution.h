@@ -3,6 +3,10 @@
 
 #include <vector>
 #include <stdexcept>
+#include "graphe.h"
+#include <iterator>
+#include <numeric>      // std::iota
+#include <algorithm>    // std::sort, std::stable_sort
 using namespace std;
 
 
@@ -11,12 +15,18 @@ class Solution{
     int lenSol;
 public:
     Solution(int n);
+    Solution(Solution const &newSol);
     Solution() {};
-    vector<bool> getSolution();
-    void setSolution(vector<bool> newSol);
-    Solution* voisinsSolution();
+    vector<bool> getSolution(){return solution;};
+    int getNbVertex(){return lenSol;};
+    vector<Solution> voisinsSolution(Graphe g);
     void addVertex(int i);
-    bool isAdmissible();
+    void delVertex(int i);
+    int taille();
+    bool isAdmissible(Graphe graphe);
+    bool isAjoutAdmissible(int v, Graphe graphe);
 };
+
+void printSolution(Solution s);
 
 #endif // SOLUTION_H

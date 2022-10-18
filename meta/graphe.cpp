@@ -23,10 +23,11 @@ Graphe::Graphe(string filepath){
            clog << "Vertices = " << n << ",";
            clog << "Edges = " << m << "\n";
            edge=new int*[n];                  //:: indicates it's a global variable
-           for(int ii=0;ii<(n);ii++){
+           for(int ii=0;ii<n;ii++){
                edge[ii]=new int[n];
-               for(int jj=0;jj<(n);jj++)
+               for(int jj=0;jj<n;jj++){
                    edge[ii][jj]=0;
+               }
            }
        }
        if (!strcmp(token, "e")){
@@ -44,4 +45,15 @@ Graphe::Graphe(string filepath){
     //if ( (::m != mCount)) cerr<<"Warning reading graph. Announced m size=" << ::m << ", found=" << mCount  << endl;
     m = mCount;
     graphStream.close();
+}
+
+vector<int> Graphe::getVertexDegree(){
+    vector<int> table;
+    table.assign(n,0);
+    for(int v=0;v<n;v++){
+        for(int v2=0;v2<n;v2++){
+            table[v] += edge[v][v2];
+        }
+    }
+    return table;
 }

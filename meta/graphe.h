@@ -11,6 +11,7 @@
 #include<time.h>
 #include<limits>
 #include<assert.h>
+#include <vector>
 using namespace std;
 
 class Graphe{
@@ -19,4 +20,8 @@ class Graphe{
     int     m;               //edge no
 public:
     Graphe(string filepath);
+    int** getEdge(){return edge;}
+    int getNbEdge(){return m;}
+    int getNbVertex(){return n;}
+    vector<int> getVertexDegree();
 };
