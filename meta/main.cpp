@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     sol2.addVertex(1);
     clog<<"Taille Solution "<<sol2.taille();
     clog<<"Admissible "<<sol2.isAdmissible(g);*/
-    Solution sol = heuristique_insertion(g);
-    cout<<"Taille de la solution obtenue par heuristique par insertion : "<<sol.taille();
+    Solution sol = heuristique_insertion_legal_strategy(g);
+    cout<<"Taille de la solution obtenue par heuristique par insertion : "<<sol.taille()<<endl;
+    printSolution(sol);
 }

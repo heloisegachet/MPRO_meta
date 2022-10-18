@@ -19,7 +19,9 @@ public:
     Solution() {};
     vector<bool> getSolution(){return solution;};
     int getNbVertex(){return lenSol;};
-    vector<Solution> voisinsSolution(Graphe g);
+    vector<Solution> voisinsAjout(Graphe g, bool admissibleOnly);
+    vector<Solution> voisinsSuppr(Graphe g);
+    vector<Solution> voisinsEchange(Graphe g, bool admissibleOnly);
     void addVertex(int i);
     void delVertex(int i);
     int taille();

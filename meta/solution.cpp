@@ -14,7 +14,7 @@ Solution::Solution(Solution const &newSol){
 }
 
 
-vector<Solution> Solution::voisinsSolution(Graphe graphe){
+vector<Solution> Solution::voisinsAjout(Graphe graphe, bool admissibleOnly){
     vector<Solution> tabSol;
     vector<int> degree_table = graphe.getVertexDegree();
 
@@ -22,25 +22,55 @@ vector<Solution> Solution::voisinsSolution(Graphe graphe){
     vector<int> Vertices(lenSol);
 
     iota(Vertices.begin(),Vertices.end(),0); //Initializing
-    stable_sort( Vertices.begin(),Vertices.end(), [&](int i,int j){return degree_table[i]<degree_table[j];} );
+    stable_sort( Vertices.begin(),Vertices.end(), [&](int i,int j){return degree_table[i]>degree_table[j];} );
 
 
     //Ajouter les sommets à la solution courante si on conserve l'admissibilité
     for(vector<int>::iterator it =Vertices.begin(); it !=Vertices.end(); ++it){
         //AJOUT D'UN SOMMET (bit 0 -> 1): VERIFICATION D'ADMISSIBILITE DE LA SOLUTION VOISINE
-        if(isAjoutAdmissible(*it, graphe)){
+        if(!admissibleOnly || isAjoutAdmissible(*it, graphe)){
             Solution voisin = Solution(*this);
             voisin.addVertex(*it);
             tabSol.push_back(voisin);
         }
+    }
+    return tabSol;
+}
+
+vector<Solution> Solution::voisinsSuppr(Graphe graphe){
+    vector<Solution> tabSol;
+    vector<int> degree_table = graphe.getVertexDegree();
+
+    //Ajouter les sommets à la solution courante si on conserve l'admissibilité
+    for(int i=0; i<lenSol; i++){
         //SUPPRESSION D'UN SOMMET (bit 1 -> 0): SOLUTION ADMISSIBLE
-        //OBJECTIF PLUS PETIT
-        if(solution[*it]==1){
+        if(solution[i]==1){
               Solution voisin = Solution(*this);
-              voisin.delVertex(*it);
+              voisin.delVertex(i);
               tabSol.push_back(voisin);
          }
+    }
+    return tabSol;
+}
 
+vector<Solution> Solution::voisinsEchange(Graphe graphe, bool admissibleOnly){
+    vector<Solution> tabSol;
+    vector<int> degree_table = graphe.getVertexDegree();
+
+    //Ajouter les sommets à la solution courante si on conserve l'admissibilité
+    for(int i=0; i<lenSol; i++){
+        //SUPPRESSION D'UN SOMMET (bit 1 -> 0): SOLUTION ADMISSIBLE
+        if(solution[i]==1){
+            //AJOUT D'UN SOMMET (bit 0 -> 1) : VERIFICATION ADMISSIBILITÉ
+            for(int ii=0; ii<lenSol;ii++){
+                if(!admissibleOnly || isAjoutAdmissible(ii, graphe)){
+                Solution voisin = Solution(*this);
+                voisin.addVertex(ii);
+                voisin.delVertex(i);
+                tabSol.push_back(voisin);
+                }
+            }
+        }          
     }
     return tabSol;
 }

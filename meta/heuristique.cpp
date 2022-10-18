@@ -1,19 +1,17 @@
 #include "heuristique.h"
 
 
-Solution heuristique_insertion(Graphe g){
+Solution heuristique_insertion_legal_strategy(Graphe g){
     int n = g.getNbVertex();
     Solution sol = Solution(n);
     for(int i=0;i<n;i++){
-        cout<<"i "<<i<<"\n";
-        vector<Solution> voisinage = sol.voisinsSolution(g);
-        vector<Solution> voisinageAmeliorant;
-        for(vector<Solution>::iterator it=voisinage.begin();it!=voisinage.end();it++){
+        vector<Solution> voisinage_echange = sol.voisinsEchange(g, true);
+        vector<Solution> voisinageAmeliorant = sol.voisinsAjout(g, true);
+        for(vector<Solution>::iterator it=voisinage_echange.begin();it!=voisinage_echange.end();it++){
             if(it->taille()>=sol.taille()){
                 voisinageAmeliorant.push_back(*it);
             }
-        }
-        
+        }        
         if(voisinageAmeliorant.size()==0)
         {
             cout<<"Optimum local"<<endl;
@@ -24,3 +22,10 @@ Solution heuristique_insertion(Graphe g){
     }
     return sol;
 }
+
+/*
+Solution heuristique_insertion_increasing_edges(Graphe g){
+    int n = g.getNbVertex();
+    Solution sol = Solution(n);
+    return sol;
+}*/
