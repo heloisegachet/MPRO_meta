@@ -19,6 +19,7 @@ public:
     Solution() {};
     vector<bool> getSolution(){return solution;};
     int getNbVertex(){return lenSol;};
+    vector<Solution> voisins(Graphe g, bool admissibleOnly);
     vector<Solution> voisinsAjout(Graphe g, bool admissibleOnly);
     vector<Solution> voisinsSuppr(Graphe g);
     vector<Solution> voisinsEchange(Graphe g, bool admissibleOnly);

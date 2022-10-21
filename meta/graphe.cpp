@@ -1,5 +1,16 @@
 #include "graphe.h"
 
+Graphe::Graphe(int n){
+    m = 0;
+    n = n;
+    edge = new int*[n];
+    for(int ii=0;ii<n;ii++){
+        edge[ii]=new int[n];
+       for(int jj=0;jj<n;jj++){
+            edge[ii][jj]=0;
+       }
+    }
+}
 
 Graphe::Graphe(string filepath){
     ifstream graphStream;
@@ -56,4 +67,8 @@ vector<int> Graphe::getVertexDegree(){
         }
     }
     return table;
+}
+
+void Graphe::addEdge(int i, int j){
+    edge[i][j] = 1;
 }

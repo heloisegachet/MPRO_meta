@@ -13,6 +13,15 @@ Solution::Solution(Solution const &newSol){
     }
 }
 
+vector<Solution> Solution::voisins(Graphe graphe, bool admissibleOnly){
+    //AJOUT + SUPPRESSION
+    vector<Solution> voisinage = voisinsAjout(graphe, true);
+    vector<Solution> voisinage_suppr = voisinsSuppr(graphe);
+    for(vector<Solution>::iterator it=voisinage_suppr.begin();it!=voisinage_suppr.end();it++){
+        voisinage.push_back(*it);
+    }
+    return voisinage;    
+}
 
 vector<Solution> Solution::voisinsAjout(Graphe graphe, bool admissibleOnly){
     vector<Solution> tabSol;
@@ -41,6 +50,12 @@ vector<Solution> Solution::voisinsSuppr(Graphe graphe){
     vector<Solution> tabSol;
     vector<int> degree_table = graphe.getVertexDegree();
 
+     //Trier les sommets par degrés décroissants
+    vector<int> Vertices(lenSol);
+
+    iota(Vertices.begin(),Vertices.end(),0); //Initializing
+    stable_sort( Vertices.begin(),Vertices.end(), [&](int i,int j){return degree_table[i]<degree_table[j];} );
+
     //Ajouter les sommets à la solution courante si on conserve l'admissibilité
     for(int i=0; i<lenSol; i++){
         //SUPPRESSION D'UN SOMMET (bit 1 -> 0): SOLUTION ADMISSIBLE
@@ -55,7 +70,6 @@ vector<Solution> Solution::voisinsSuppr(Graphe graphe){
 
 vector<Solution> Solution::voisinsEchange(Graphe graphe, bool admissibleOnly){
     vector<Solution> tabSol;
-    vector<int> degree_table = graphe.getVertexDegree();
 
     //Ajouter les sommets à la solution courante si on conserve l'admissibilité
     for(int i=0; i<lenSol; i++){
@@ -128,8 +142,12 @@ bool Solution::isAjoutAdmissible(int v, Graphe graphe){
 }
 
 void printSolution(Solution s){
-    for(int ii=0; ii<s.getNbVertex();ii++){
+    /*for(int ii=0; ii<s.getNbVertex();ii++){
         cout<<" "<<s.getSolution()[ii];
+    }*/
+    for(int ii=0; ii<s.getNbVertex();ii++){
+        if(s.getSolution()[ii])
+            cout<<" "<<ii;
     }
 }
 

@@ -20,8 +20,10 @@ class Graphe{
     int     m;               //edge no
 public:
     Graphe(string filepath);
+    Graphe(int n);
     int** getEdge(){return edge;}
     int getNbEdge(){return m;}
     int getNbVertex(){return n;}
+    void addEdge(int i, int j);
     vector<int> getVertexDegree();
 };
