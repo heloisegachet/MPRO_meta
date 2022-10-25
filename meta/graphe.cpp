@@ -1,8 +1,8 @@
 #include "graphe.h"
 
-Graphe::Graphe(int n){
+Graphe::Graphe(int n_){
     m = 0;
-    n = n;
+    n = n_;
     edge = new int*[n];
     for(int ii=0;ii<n;ii++){
         edge[ii]=new int[n];
@@ -58,6 +58,14 @@ Graphe::Graphe(string filepath){
     graphStream.close();
 }
 
+/*
+Graphe::~Graphe(){
+	for(int ii=0;ii<n;ii++){
+		delete[] edge[ii];	   
+	}
+	delete[] edge;
+}*/
+
 vector<int> Graphe::getVertexDegree(){
     vector<int> table;
     table.assign(n,0);
@@ -71,4 +79,18 @@ vector<int> Graphe::getVertexDegree(){
 
 void Graphe::addEdge(int i, int j){
     edge[i][j] = 1;
+    m++;
+}
+void Graphe::delEdge(int i, int j){
+    edge[i][j] = 0;
+    m--;
+}
+
+void Graphe::printGraphe(){
+    for(int v=0;v<n;v++){
+        for(int v2=0;v2<n;v2++){
+            cout<<edge[v][v2]<<" ";
+        }
+        cout<<endl;
+    }
 }

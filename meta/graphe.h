@@ -21,9 +21,13 @@ class Graphe{
 public:
     Graphe(string filepath);
     Graphe(int n);
+    //~Graphe();
     int** getEdge(){return edge;}
+    int getEdge(int v1, int v2){return edge[v1][v2];}
     int getNbEdge(){return m;}
     int getNbVertex(){return n;}
     void addEdge(int i, int j);
+    void delEdge(int i, int j);
     vector<int> getVertexDegree();
+    void printGraphe();
 };

@@ -5,7 +5,15 @@ using JuMP, CPLEX
 #filename = "random-70.col";
 #filename = "random-100.col";
 #filename = "dsjc125.1.col";
-filename = "brock200_2.col";
+#filename = "brock200_2.col";
+#filename = "dsjc125.1.col";
+#filename = "dsjc250.5.col";
+#filename = "dsjc500.1.col";
+filename = "dsjc500.5.col";
+# filename = "dsjc500.9.col";
+#filename = "dsjc1000.1.col";
+# filename = "dsjc1000.5.col";
+# filename = "dsjc1000.9.col";
 filepath = "C:/Users/gache/Documents/ENPC/3A/Metaheuristic/git/Instances/"
 
 f     = open(string(filepath, filename));
@@ -14,6 +22,7 @@ dummy1, dummy2, n, m = split(line1);
 n     = parse(Int, n);
 m     = parse(Int, m);
 edges = zeros(Int, n,n);
+
 for i in 1:m
     line = readline(f);
     useless_e, v1, v2 = split(line);

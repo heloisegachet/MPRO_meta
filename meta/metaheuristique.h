@@ -1,3 +1,5 @@
+#include <math.h>
+#include <algorithm>
 #include "solution.h"
 #include "heuristique.h"
 #include <ctime>
@@ -6,4 +8,5 @@ using namespace std;
 #include <chrono>       /* time_t, struct tm, difftime, time, mktime */
 using namespace std::chrono;
 
-void metaheuristique(Graphe g, int len_tabou, int nb_iter_sans_changement);
+void metaheuristique(string filepath, Graphe g, int time_max, int normal_tabou, int long_tabou, int nb_iter_sans_changement, 
+                    int nb_iter_long_tabou, int nb_iter_diversification,float percentSuppr, int seuil);

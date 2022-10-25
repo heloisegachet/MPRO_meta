@@ -145,10 +145,12 @@ void printSolution(Solution s){
     /*for(int ii=0; ii<s.getNbVertex();ii++){
         cout<<" "<<s.getSolution()[ii];
     }*/
+    cout<<"Solution : ";
     for(int ii=0; ii<s.getNbVertex();ii++){
         if(s.getSolution()[ii])
             cout<<" "<<ii;
     }
+    cout<<endl;
 }
 
 
