@@ -4,7 +4,6 @@
 Solution heuristique_insertion_legal_strategy(Graphe g){
     int n = g.getNbVertex();
     Solution sol = Solution(n);
-    vector<Solution> tabSol;
     //Trier les sommets par degrés décroissants
     vector<int> degree_table = g.getVertexDegree();
     vector<pair<int, int>> Vertices(n);

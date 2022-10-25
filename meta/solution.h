@@ -28,6 +28,7 @@ public:
     int taille();
     bool isAdmissible(Graphe graphe);
     bool isAjoutAdmissible(int v, Graphe graphe);
+    int isSwapAdmissible(int v, Graphe graphe);
 };
 
 void printSolution(Solution s);

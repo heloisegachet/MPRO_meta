@@ -1,0 +1,2 @@
+iterations 0 solution 32 89 136 203 taille 4
+iterations 8 solution 11 134 209 266 313 taille 5

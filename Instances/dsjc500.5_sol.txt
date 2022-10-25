@@ -1,0 +1,6 @@
+iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
+iterations 2 solution 9 14 54 106 201 278 302 353 410 taille 9
+iterations 3 solution 9 14 54 81 106 201 226 278 302 356 taille 10
+iterations 1 solution 9 14 54 81 106 197 201 226 278 302 356 taille 11
+iterations 91 solution 14 60 85 194 207 226 278 301 324 327 361 399 taille 12
+iterations 2086 solution 42 69 119 322 331 336 363 387 402 405 436 445 486 taille 13

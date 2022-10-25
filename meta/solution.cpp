@@ -141,6 +141,26 @@ bool Solution::isAjoutAdmissible(int v, Graphe graphe){
     return somme_vertex == nb_vertex_sol;
 }
 
+int Solution::isSwapAdmissible(int v, Graphe graphe){
+    if(solution[v] == 1)
+        return -1; //le sommet est déjà dans la solution
+    int nb_vertex_sol=0;
+    int somme_vertex = 0;
+    int vSuppr = -1;
+    for(int v2=0;v2<lenSol;v2++){
+        if(solution[v2]==1){
+            somme_vertex += graphe.getEdge()[v][v2];
+            if(v!=v2 && graphe.getEdge()[v][v2]==0){
+                vSuppr = v2;
+            }
+            nb_vertex_sol++;
+        }
+    }
+    if(somme_vertex == nb_vertex_sol-1)
+        return vSuppr;
+    return -1;
+}
+
 void printSolution(Solution s){
     /*for(int ii=0; ii<s.getNbVertex();ii++){
         cout<<" "<<s.getSolution()[ii];

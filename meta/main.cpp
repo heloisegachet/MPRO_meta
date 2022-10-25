@@ -20,7 +20,7 @@
 //string filename = "dsjc1000.1.col";
 //string filename = "dsjc1000.5.col";
 //string filename = "dsjc1000.9.col";
-string filename = "p_hat1500-3.txt";
+//string filename = "p_hat1500-3.txt";
 //string filename = "p_hat700-1.txt";
 //string filename = "C500.9.txt";
 //string filename = "C2000.5.txt";
@@ -44,14 +44,16 @@ int main(int argc, char *argv[])
        std::cout << "file " << filepath_sol << " not found.\n";
     //metaheuristique(filepath_sol, g,1,10,2000,2000,0.05,500);
    int time_max = 60*5;
-   int normal_tabou = 1;
-   int long_tabou = 100;
-   int nb_iter_sans_changements = 4000;    
-   int nb_iter_long_tabou = 2000;    
-   int nb_iter_diversification = 5000;
+   int normal_tabou = 2;
+   int long_tabou = 15;
+   int nb_iter_sans_changements = 1000; //2000   
+   int nb_iter_long_tabou = 1000;    //2000
+   int nb_iter_diversification = 1000; //5000
    float percentSuppr = 0.05;
    float seuil = 0.05;
-   metaheuristique(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification,
+   //metaheuristique(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification,
+   //               percentSuppr,seuil);  
+   metaheuristique_bis(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification,
                   percentSuppr,seuil);  
    */
    launchTest(60*5);

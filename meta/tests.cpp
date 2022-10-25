@@ -17,8 +17,8 @@ void launchTest(int time_max){
     filesTest.push_back("dsjc1000.5.col");
     filesTest.push_back("dsjc1000.9.col");
 
-    filesTest.push_back("p_hat1500-3.txt");
-    filesTest.push_back("p_hat700-1.txt");
+    //filesTest.push_back("p_hat1500-3.txt");
+    //filesTest.push_back("p_hat700-1.txt");
     //filesTest.push_back("C500.9.txt");
     //filesTest.push_back("C2000.5.txt");
     //filesTest.push_back("brock800_4.txt");
@@ -32,13 +32,10 @@ void launchTest(int time_max){
         filesystem::remove(filepath_sol);
 
         int normal_tabou = 2;
-        int long_tabou = 10;
-        int nb_iter_sans_changements = 4000;    
-        int nb_iter_long_tabou = 2000;    
-        int nb_iter_diversification = 5000;
-        float percentSuppr = 0.05;
-        float seuil = 0.05;
-        metaheuristique(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification,
-                        percentSuppr,seuil); 
+        int long_tabou = 15;
+        int nb_iter_sans_changements = 1000; //2000   
+        int nb_iter_long_tabou = 1000;    //2000
+        int nb_iter_diversification = 1000; //5000
+        metaheuristique_bis(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification); 
     }
 }
