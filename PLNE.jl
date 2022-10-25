@@ -9,9 +9,9 @@ using JuMP, CPLEX
 #filename = "dsjc125.1.col";
 #filename = "dsjc250.5.col";
 #filename = "dsjc500.1.col";
-filename = "dsjc500.5.col";
+#filename = "dsjc500.5.col";
 # filename = "dsjc500.9.col";
-#filename = "dsjc1000.1.col";
+filename = "dsjc1000.1.col";
 # filename = "dsjc1000.5.col";
 # filename = "dsjc1000.9.col";
 filepath = "C:/Users/gache/Documents/ENPC/3A/Metaheuristic/git/Instances/"

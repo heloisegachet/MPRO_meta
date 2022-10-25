@@ -21,7 +21,7 @@
 //string filename = "dsjc1000.5.col";
 //string filename = "dsjc1000.9.col";
 //string filename = "p_hat1500-3.txt";
-//string filename = "p_hat700-1.txt";
+string filename = "p_hat700-1.txt";
 //string filename = "C500.9.txt";
 //string filename = "C2000.5.txt";
 //string filename = "brock800_4.txt";
@@ -33,7 +33,7 @@
 // include as argument : ../Instances/<instance_name>
 
 int main(int argc, char *argv[])
-{  /*
+{  
     string filepath = (filesystem::current_path()).parent_path().parent_path().string() + "/Instances/"+filename;
     Graphe g(filepath);
     
@@ -53,8 +53,7 @@ int main(int argc, char *argv[])
    float seuil = 0.05;
    //metaheuristique(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification,
    //               percentSuppr,seuil);  
-   metaheuristique_bis(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification,
-                  percentSuppr,seuil);  
-   */
-   launchTest(60*5);
+   metaheuristique_bis(filepath_sol, g, time_max, normal_tabou, long_tabou, nb_iter_diversification, nb_iter_long_tabou, nb_iter_diversification);  
+   
+   //launchTest(60*5);
 }

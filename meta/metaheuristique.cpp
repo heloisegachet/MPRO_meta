@@ -250,7 +250,6 @@ void metaheuristique(string filepath, Graphe g, int time_max, int normal_tabou, 
 
 
 void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tabou, int long_tabou, int nb_iter_sans_changement, int nb_iter_long_tabou, int nb_iter_diversification){
-    //CHANGES : add to tabu list only the deletions
     vector<bool> vertexTable;
     int n = g.getNbVertex();
 
