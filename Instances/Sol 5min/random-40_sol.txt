@@ -1,0 +1,3 @@
+iterations 0 time 0 solution 5 15 32 33 34 taille 5
+iterations 2 time 0 solution 15 24 29 32 33 34 taille 6
+iterations 4 time 0 solution 13 15 24 28 29 33 34 taille 7

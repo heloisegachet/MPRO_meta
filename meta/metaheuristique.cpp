@@ -80,7 +80,7 @@ void writeSolutionToFile(int iterations, int time, Solution s, string filename){
     myfile.close();
 }
 
-void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tabou, int long_tabou, int nb_iter_sans_changement, int nb_iter_long_tabou, int nb_iter_diversification){
+void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tabou, int long_tabou, int small_tabou, int nb_iter_sans_changement, int nb_iter_long_tabou, int nb_iter_diversification, int nb_iter_small_tabou){
     vector<bool> vertexTable;
     int n = g.getNbVertex();
     vertexTable.assign(n, 1);
@@ -96,7 +96,7 @@ void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tab
     printSolution(sol);
     //keep in a variable the best solution so far and write it down
     Solution bestSol = Solution(sol);
-    writeSolutionToFile(0, duration.count(), bestSol, filepath);
+    writeSolutionToFile(0, 1e-6*duration.count(), bestSol, filepath);
 
     int iterations = 0;
     int iterationsTabou = 0;
@@ -198,17 +198,27 @@ void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tab
         }
         if(iterationsTabou==nb_iter_sans_changement+1){
             // restart from another clique after nb_iter_sans_changement+1 iterations without changes on the bestSol
-            tabouIndex.assign(g.getNbVertex(),0);
-            tabou_list = queue<int>();
+            //tabouIndex.assign(g.getNbVertex(),0);
+            //tabou_list = queue<int>();
+            cout<<"diversify"<<endl;
             sol = restart_from_another_clique(g, vertexTable, frequency);
         }
         if(iterationsTabou==nb_iter_sans_changement+1+nb_iter_diversification){
             // extend the tabou list nb_iter_sans_changement + nb_iter_diversification+1 iterations without changes on the bestSol
+            cout<<"extend tabou"<<endl;
             len_tabou = long_tabou;
         }
         if(iterationsTabou==nb_iter_sans_changement+nb_iter_long_tabou+1+nb_iter_diversification){
             // go back to the normal tabu length after nb_iter_sans_changement + nb_iter_diversification
             // +nb_iter_lon_tabou+1 iterations without changes on the bestSol
+            cout<<"shorten tabou"<<endl;
+            len_tabou = small_tabou;
+            sol = Solution(bestSol);
+        }
+        if(iterationsTabou==nb_iter_sans_changement+nb_iter_long_tabou+1+nb_iter_diversification+nb_iter_small_tabou){
+            // go back to the normal tabu length after nb_iter_sans_changement + nb_iter_diversification
+            // +nb_iter_lon_tabou+1 iterations without changes on the bestSol
+            cout<<"normal tabou"<<endl;
             len_tabou = normal_tabou;
             iterationsTabou = 0;
         }
@@ -234,7 +244,7 @@ void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tab
             previousIterations = iterations;
             iterations = 0;
             iterationsTabou = 0;
-            if(len_tabou == long_tabou){
+            if(len_tabou != normal_tabou){
                 std::cout<<"Retour de la liste taboue a la normale"<<endl;
                 len_tabou = normal_tabou;
             }

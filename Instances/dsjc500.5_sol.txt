@@ -1,6 +1,0 @@
-iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
-iterations 7 solution 54 81 107 201 234 278 324 459 466 taille 9
-iterations 3 solution 14 54 81 201 226 278 324 459 466 496 taille 10
-iterations 3 solution 14 50 54 85 95 201 226 278 324 466 496 taille 11
-iterations 25 solution 31 114 119 138 181 278 308 404 423 452 469 492 taille 12
-iterations 81 solution 3 12 61 65 85 114 169 194 259 323 326 376 411 taille 13

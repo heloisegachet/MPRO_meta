@@ -9,5 +9,5 @@ using namespace std;
 using namespace std::chrono;
 
 
-void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tabou, int long_tabou, int nb_iter_sans_changement, 
-                    int nb_iter_long_tabou, int nb_iter_diversification);
+void metaheuristique_bis(string filepath, Graphe g, int time_max, int normal_tabou, int long_tabou, int small_tabou, 
+int nb_iter_sans_changement, int nb_iter_long_tabou, int nb_iter_diversification, int nb_iter_small_tabou);

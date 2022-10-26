@@ -1,3 +1,0 @@
-iterations 0 solution 5 15 32 33 34 taille 5
-iterations 2 solution 15 16 29 32 33 34 taille 6
-iterations 3 solution 11 24 26 29 32 33 34 taille 7

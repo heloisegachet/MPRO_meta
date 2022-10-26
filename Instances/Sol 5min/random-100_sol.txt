@@ -1,0 +1,3 @@
+iterations 0 time 0 solution 11 22 24 47 50 80 96 taille 7
+iterations 2 time 0 solution 11 24 32 47 50 80 90 96 taille 8
+iterations 110 time 0 solution 2 3 22 24 27 36 47 56 86 taille 9

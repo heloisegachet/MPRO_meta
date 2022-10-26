@@ -1,6 +1,0 @@
-iterations 0 solution 10 41 47 48 49 70 185 taille 7
-iterations 3 solution 41 47 49 60 70 87 117 185 taille 8
-iterations 2 solution 41 47 60 70 87 117 125 167 185 taille 9
-iterations 32 solution 10 14 41 49 69 70 133 134 185 198 taille 10
-iterations 1360 solution 36 84 85 90 102 118 150 163 176 183 200 taille 11
-iterations 8480 solution 27 48 55 70 105 120 121 135 145 149 158 183 taille 12

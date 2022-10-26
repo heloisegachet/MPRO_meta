@@ -1,5 +1,5 @@
-iterations 0 solution 79 295 350 387 410 465 678 taille 7
-iterations 4 solution 79 223 295 350 387 410 606 678 taille 8
-iterations 35 solution 244 260 343 382 437 448 528 590 610 taille 9
-iterations 295 solution 4 24 74 117 306 334 397 402 459 528 taille 10
-iterations 5 solution 117 151 306 334 397 459 513 528 537 559 686 taille 11
+iterations 0 time 0 solution 79 295 350 387 410 465 678 taille 7
+iterations 7 time 0 solution 152 223 295 387 410 606 653 678 taille 8
+iterations 103 time 2 solution 149 243 304 348 351 373 391 549 588 taille 9
+iterations 187 time 4 solution 105 110 122 132 170 212 351 468 493 698 taille 10
+iterations 471 time 10 solution 117 151 254 306 334 397 459 513 537 559 686 taille 11
