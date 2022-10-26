@@ -19,14 +19,9 @@ public:
     Solution() {};
     vector<bool> getSolution(){return solution;};
     int getNbVertex(){return lenSol;};
-    vector<Solution> voisins(Graphe g, bool admissibleOnly);
-    vector<Solution> voisinsAjout(Graphe g, bool admissibleOnly);
-    vector<Solution> voisinsSuppr(Graphe g);
-    vector<Solution> voisinsEchange(Graphe g, bool admissibleOnly);
     void addVertex(int i);
     void delVertex(int i);
     int taille();
-    bool isAdmissible(Graphe graphe);
     bool isAjoutAdmissible(int v, Graphe graphe);
     int isSwapAdmissible(int v, Graphe graphe);
 };

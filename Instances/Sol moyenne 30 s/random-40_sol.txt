@@ -1,0 +1,15 @@
+iterations 0 solution 5 15 32 33 34 taille 5
+iterations 3 solution 5 10 11 13 33 34 taille 6
+iterations 1 solution 5 9 10 11 13 33 34 taille 7
+iterations 0 solution 5 15 32 33 34 taille 5
+iterations 2 solution 15 16 29 32 33 34 taille 6
+iterations 4 solution 13 15 24 28 29 33 34 taille 7
+iterations 0 solution 5 15 32 33 34 taille 5
+iterations 2 solution 15 24 29 32 33 34 taille 6
+iterations 2 solution 11 24 26 29 32 33 34 taille 7
+iterations 0 solution 5 15 32 33 34 taille 5
+iterations 2 solution 15 16 29 32 33 34 taille 6
+iterations 6 solution 11 13 24 26 29 33 35 taille 7
+iterations 0 solution 5 15 32 33 34 taille 5
+iterations 2 solution 15 16 29 32 33 34 taille 6
+iterations 26 solution 13 15 24 28 29 33 34 taille 7

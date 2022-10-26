@@ -1,3 +1,5 @@
 iterations 0 solution 79 295 350 387 410 465 678 taille 7
 iterations 4 solution 79 223 295 350 387 410 606 678 taille 8
 iterations 35 solution 244 260 343 382 437 448 528 590 610 taille 9
+iterations 295 solution 4 24 74 117 306 334 397 402 459 528 taille 10
+iterations 5 solution 117 151 306 334 397 459 513 528 537 559 686 taille 11

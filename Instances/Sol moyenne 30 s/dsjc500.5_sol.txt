@@ -1,0 +1,29 @@
+iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
+iterations 2 solution 14 54 106 136 201 217 266 353 410 taille 9
+iterations 5 solution 14 54 135 153 217 266 316 385 386 410 taille 10
+iterations 1 solution 14 46 54 135 153 217 266 316 385 386 410 taille 11
+iterations 1 solution 14 46 54 135 153 217 266 316 339 385 386 410 taille 12
+iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
+iterations 2 solution 14 54 106 135 136 201 226 278 410 taille 9
+iterations 2 solution 14 54 106 135 153 201 226 278 336 410 taille 10
+iterations 7 solution 14 50 54 60 85 106 226 278 336 356 361 taille 11
+iterations 22 solution 5 54 60 68 131 187 285 361 372 396 442 448 taille 12
+iterations 169 solution 9 14 100 154 238 273 284 300 356 405 436 486 496 taille 13
+iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
+iterations 2 solution 14 54 106 136 148 201 227 353 410 taille 9
+iterations 1 solution 14 54 106 136 148 201 227 266 353 410 taille 10
+iterations 2 solution 14 54 106 136 148 201 224 227 266 295 410 taille 11
+iterations 23 solution 122 124 148 151 153 167 216 266 399 430 458 480 taille 12
+iterations 188 solution 22 27 129 132 227 230 272 277 323 326 355 422 433 taille 13
+iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
+iterations 2 solution 14 50 54 106 136 201 226 278 410 taille 9
+iterations 3 solution 12 14 50 54 60 106 201 226 336 410 taille 10
+iterations 2 solution 12 14 50 54 60 106 201 291 336 410 425 taille 11
+iterations 216 solution 4 129 207 213 225 241 325 362 370 376 444 481 taille 12
+iterations 290 solution 32 47 123 162 183 208 328 411 414 420 429 473 487 taille 13
+iterations 0 solution 14 54 106 136 201 278 353 410 taille 8
+iterations 2 solution 14 54 106 136 148 201 353 410 425 taille 9
+iterations 2 solution 14 54 69 106 136 148 201 224 410 425 taille 10
+iterations 3 solution 3 14 54 69 106 148 201 224 336 358 425 taille 11
+iterations 13 solution 3 17 54 124 148 153 167 201 224 266 342 401 taille 12
+iterations 859 solution 52 85 124 125 145 194 328 336 408 424 435 436 499 taille 13

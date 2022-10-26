@@ -1,0 +1,4 @@
+iterations 0 solution 53 86 104 118 137 180 192 229 230 taille 9
+iterations 7 solution 44 71 86 97 98 104 150 180 201 229 taille 10
+iterations 136 solution 7 16 42 48 51 57 76 111 128 137 194 taille 11
+iterations 707 solution 5 25 33 40 59 62 63 84 101 159 187 193 taille 12

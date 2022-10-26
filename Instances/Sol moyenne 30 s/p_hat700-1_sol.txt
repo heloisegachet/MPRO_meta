@@ -1,0 +1,24 @@
+iterations 0 solution 79 295 350 387 410 465 678 taille 7
+iterations 5 solution 132 152 223 239 261 295 410 678 taille 8
+iterations 7 solution 117 132 212 239 295 343 568 593 608 taille 9
+iterations 929 solution 74 117 306 334 397 402 459 513 528 559 taille 10
+iterations 4 solution 117 151 254 306 334 397 459 513 537 559 686 taille 11
+iterations 0 solution 79 295 350 387 410 465 678 taille 7
+iterations 6 solution 79 239 290 295 350 410 420 465 taille 8
+iterations 18 solution 118 189 239 261 350 391 410 465 678 taille 9
+iterations 161 solution 24 74 117 306 334 397 402 459 528 559 taille 10
+iterations 10 solution 117 151 306 334 397 459 513 528 537 559 686 taille 11
+iterations 0 solution 79 295 350 387 410 465 678 taille 7
+iterations 7 solution 79 128 239 290 295 350 410 465 taille 8
+iterations 25 solution 105 126 132 201 239 326 608 678 696 taille 9
+iterations 419 solution 74 117 151 306 334 397 459 513 528 559 taille 10
+iterations 17 solution 117 151 306 334 397 459 513 528 537 559 686 taille 11
+iterations 0 solution 79 295 350 387 410 465 678 taille 7
+iterations 3 solution 79 223 295 350 387 410 606 678 taille 8
+iterations 143 solution 148 350 354 393 495 583 593 658 675 taille 9
+iterations 479 solution 79 105 110 170 192 212 351 468 493 698 taille 10
+iterations 0 solution 79 295 350 387 410 465 678 taille 7
+iterations 3 solution 79 239 290 295 350 410 420 465 taille 8
+iterations 5 solution 79 128 152 290 295 342 410 447 496 taille 9
+iterations 160 solution 74 117 128 254 306 334 397 402 513 559 taille 10
+iterations 7 solution 117 151 306 334 397 459 513 528 537 559 686 taille 11

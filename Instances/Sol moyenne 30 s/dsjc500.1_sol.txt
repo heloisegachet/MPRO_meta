@@ -1,0 +1,10 @@
+iterations 0 solution 32 89 136 203 taille 4
+iterations 28 solution 94 136 143 336 366 taille 5
+iterations 0 solution 32 89 136 203 taille 4
+iterations 12 solution 152 227 277 284 471 taille 5
+iterations 0 solution 32 89 136 203 taille 4
+iterations 148 solution 332 339 451 456 465 taille 5
+iterations 0 solution 32 89 136 203 taille 4
+iterations 67 solution 189 271 353 394 407 taille 5
+iterations 0 solution 32 89 136 203 taille 4
+iterations 187 solution 93 165 251 368 494 taille 5

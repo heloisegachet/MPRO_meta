@@ -1,0 +1,15 @@
+iterations 0 solution 5 11 26 46 57 66 taille 6
+iterations 2 solution 5 8 11 26 34 57 66 taille 7
+iterations 4 solution 5 26 42 57 59 64 66 69 taille 8
+iterations 0 solution 5 11 26 46 57 66 taille 6
+iterations 2 solution 5 14 19 26 46 57 66 taille 7
+iterations 2 solution 5 14 19 26 32 46 62 66 taille 8
+iterations 0 solution 5 11 26 46 57 66 taille 6
+iterations 4 solution 20 26 27 46 62 66 69 taille 7
+iterations 3 solution 14 19 26 27 32 46 62 66 taille 8
+iterations 0 solution 5 11 26 46 57 66 taille 6
+iterations 2 solution 5 14 19 26 46 57 66 taille 7
+iterations 2 solution 5 14 19 26 32 46 62 66 taille 8
+iterations 0 solution 5 11 26 46 57 66 taille 6
+iterations 2 solution 5 19 26 46 57 66 69 taille 7
+iterations 3 solution 5 14 19 26 32 46 62 66 taille 8

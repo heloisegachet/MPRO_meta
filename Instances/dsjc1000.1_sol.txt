@@ -1,2 +1,2 @@
 iterations 0 solution 441 482 515 741 764 taille 5
-iterations 4159 solution 338 342 417 441 889 892 taille 6
+iterations 1222 solution 338 342 417 441 889 892 taille 6

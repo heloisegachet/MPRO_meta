@@ -1,0 +1,20 @@
+iterations 0 solution 53 86 104 118 137 180 192 229 230 taille 9
+iterations 39 solution 57 75 76 111 118 128 135 180 190 243 taille 10
+iterations 424 solution 7 16 43 138 144 148 154 166 167 186 203 taille 11
+iterations 313 solution 7 23 51 86 113 137 154 167 186 194 213 222 taille 12
+iterations 0 solution 53 86 104 118 137 180 192 229 230 taille 9
+iterations 8 solution 16 44 50 71 86 104 180 192 230 240 taille 10
+iterations 114 solution 5 24 51 62 160 166 167 198 200 236 245 taille 11
+iterations 141 solution 5 25 33 40 59 62 63 84 101 159 187 193 taille 12
+iterations 0 solution 53 86 104 118 137 180 192 229 230 taille 9
+iterations 11 solution 16 44 51 67 71 80 86 104 123 192 taille 10
+iterations 49 solution 5 24 51 62 160 166 167 198 200 236 245 taille 11
+iterations 868 solution 7 23 51 86 113 137 154 167 186 194 213 222 taille 12
+iterations 0 solution 53 86 104 118 137 180 192 229 230 taille 9
+iterations 10 solution 16 42 51 86 104 119 199 213 223 230 taille 10
+iterations 10 solution 16 42 51 71 79 104 120 137 157 171 247 taille 11
+iterations 971 solution 5 25 33 40 59 62 63 84 101 159 187 193 taille 12
+iterations 0 solution 53 86 104 118 137 180 192 229 230 taille 9
+iterations 6 solution 16 44 50 86 104 180 183 192 230 240 taille 10
+iterations 33 solution 7 8 51 111 133 135 136 186 224 230 235 taille 11
+iterations 138 solution 7 23 51 86 113 137 154 167 186 194 213 222 taille 12

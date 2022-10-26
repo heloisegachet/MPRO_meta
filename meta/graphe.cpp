@@ -33,7 +33,7 @@ Graphe::Graphe(string filepath){
            graphStream >> dummyWord >> n >> m;
            clog << "Vertices = " << n << ",";
            clog << "Edges = " << m << "\n";
-           edge=new int*[n];                  //:: indicates it's a global variable
+           edge=new int*[n];                 
            for(int ii=0;ii<n;ii++){
                edge[ii]=new int[n];
                for(int jj=0;jj<n;jj++){
@@ -58,18 +58,11 @@ Graphe::Graphe(string filepath){
     graphStream.close();
 }
 
-/*
-Graphe::~Graphe(){
-	for(int ii=0;ii<n;ii++){
-		delete[] edge[ii];	   
-	}
-	delete[] edge;
-}*/
-
 vector<int> Graphe::getVertexDegree(){
     vector<int> table;
-    table.assign(n,0);
+    table.assign(n,0); //initialize the vector of degrees
     for(int v=0;v<n;v++){
+        //compute the degree for each vertex v
         for(int v2=0;v2<n;v2++){
             table[v] += edge[v][v2];
         }
@@ -79,10 +72,12 @@ vector<int> Graphe::getVertexDegree(){
 
 void Graphe::addEdge(int i, int j){
     edge[i][j] = 1;
+    edge[j][i] = 1;
     m++;
 }
 void Graphe::delEdge(int i, int j){
     edge[i][j] = 0;
+    edge[j][i] = 0;
     m--;
 }
 
